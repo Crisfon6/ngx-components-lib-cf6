@@ -10,6 +10,11 @@
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true,
     "skipLibCheck": true,
+    "paths": {
+      "ngx-components-lib-cf6": [
+        "./dist/ngx-components-lib-cf6"
+      ]
+    },
     "esModuleInterop": true,
     "sourceMap": true,
     "declaration": false,
