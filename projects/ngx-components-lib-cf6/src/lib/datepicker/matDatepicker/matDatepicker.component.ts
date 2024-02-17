@@ -16,30 +16,16 @@ import { JsonPipe } from '@angular/common';
   providers: [provideNativeDateAdapter(),provideAnimations()],
   template: `
 <mat-form-field>
-  <mat-label>Enter a date range</mat-label>
-  <mat-date-range-input [formGroup]="range" [rangePicker]="picker">
-    <input matStartDate formControlName="start" placeholder="Start date">
-    <input matEndDate formControlName="end" placeholder="End date">
-  </mat-date-range-input>
-  <mat-hint>MM/DD/YYYY – MM/DD/YYYY</mat-hint>
+  <mat-label>Choose a date</mat-label>
+  <input matInput [matDatepicker]="picker">
+  <mat-hint>MM/DD/YYYY</mat-hint>
   <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
-  <mat-date-range-picker #picker></mat-date-range-picker>
-
-  @if (range.controls.start.hasError('matStartDateInvalid')) {
-    <mat-error>Invalid start date</mat-error>
-  }
-  @if (range.controls.end.hasError('matEndDateInvalid')) {
-    <mat-error>Invalid end date</mat-error>
-  }
+  <mat-datepicker #picker></mat-datepicker>
 </mat-form-field>
 
-<p>Selected range: {{range.value | json}}</p>
   `,
   styleUrl: './matDatepicker.component.css'
 })
 export class MatDatepickerComponent {
-  range = new FormGroup({
-    start: new FormControl<Date | null>(null),
-    end: new FormControl<Date | null>(null),
-  });
+
  }
