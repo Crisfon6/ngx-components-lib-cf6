@@ -1,9 +1,4 @@
-/*
- * Public API Surface of ngx-components-lib-cf6
- */
-
-export * from './lib/ngx-components-lib-cf6.service';
-export * from './lib/ngx-components-lib-cf6.component';
-export * from './lib/buttons/public-api';
-export * from './lib/alerts/public-api';
-export * from './lib/datepicker/public-api';
+export * from './lib/components/public-api';
+export * from './lib/pipes/public-api';
+export * from './lib/services/public-api';
+export * from './lib/types/public-api';

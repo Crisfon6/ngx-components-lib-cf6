@@ -1,5 +1,10 @@
-<!-- <lib-ngx-components-lib-cf6></lib-ngx-components-lib-cf6> -->
+<lib-code-editor [language]="'Html'" (code)="code($event,'html')"></lib-code-editor>
+<!-- <lib-code-editor (code)="code($event,'css')"></lib-code-editor> -->
+<lib-code-render [html]="html+css"></lib-code-render>
+<br>
+<br><br><br> @for (topic of topicsMenu; track $index) {
+<lib-rounded-button [routerLink]="topic.route" [text]="topic.name" class="pacifico-regular" [background]="'#8338ec'" [icon]="'home'">
 
-<lib-default-button [buttonText]="title" (click)="openAlert()"></lib-default-button>
+</lib-rounded-button>
 
-<lib-mat-datepicker>
+}

@@ -1,0 +1,17 @@
+<div class="container-code">
+    <div class="header">
+        <!-- <p>html</p>
+        <button>
+          <i class="fa fa-copy"></i>
+          copy
+        </button> -->
+        <div class="language-label">
+            <p>{{language | titlecase}}</p>
+        </div>
+        <div class="copy-btn">
+            <lib-rounded-button [text]="textBtn" [icon]="icon" [cdkCopyToClipboard]="code" (click)="openSnackCopied()"></lib-rounded-button>
+        </div>
+    </div>
+    <textarea [(ngModel)]="code" (keyup)="writed()"></textarea>
+
+</div>

@@ -1,0 +1,10 @@
+<button [style.background]="background" [class]="multiClass" class="btn" [style]="style" [style.color]="color">
+  @if (icon) {
+    <lib-icon [fontIcon]="icon" [class]="iconPosition"></lib-icon>
+  }
+<p *ngIf="text">
+
+  {{text}}
+</p>
+
+</button>

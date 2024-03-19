@@ -1,6 +1,6 @@
 {
     "name": "ngx-components-lib-cf6",
-    "version": "0.0.4",
+    "version": "0.0.15",
     "peerDependencies": {
         "@angular/common": "^17.1.0",
         "@angular/core": "^17.1.0"
@@ -10,5 +10,10 @@
         "sweetalert2": "^11.10.5",
         "tslib": "^2.3.0"
     },
-    "sideEffects": false
+    "sideEffects": false,
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Crisfon6/ngx-components-lib-cf6.git"
+    },
+    "types": "dist/index.d.ts"
 }
