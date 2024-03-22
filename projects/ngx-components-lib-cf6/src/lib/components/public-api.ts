@@ -4,9 +4,8 @@
 
 
 export * from './buttons/public-api';
-export * from './datepicker/public-api';
 export * from './code-editor/code-editor.component';
 export * from './code-render/code-render.component';
-export * from './datepicker/matDatepicker/matDatepicker.component';
+export * from './datepicker/public-api';
+export * from './icon/icon.component';
 export * from './snackbar/snackbar.component';
-

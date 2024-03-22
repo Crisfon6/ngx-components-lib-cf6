@@ -1,11 +1,14 @@
 {
     "name": "ngx-components-lib-cf6",
-    "version": "0.0.15",
+    "version": "0.0.19",
     "peerDependencies": {
         "@angular/common": "^17.1.0",
-        "@angular/core": "^17.1.0"
+        "@angular/core": "^17.1.0",
+        "@angular/cdk": "^17.3.0",
+        "@angular/material": "^17.1.2"
     },
     "dependencies": {
+        "@angular/cdk": "^17.3.0",
         "@angular/material": "^17.1.2",
         "sweetalert2": "^11.10.5",
         "tslib": "^2.3.0"

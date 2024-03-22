@@ -5,5 +5,5 @@
         "entryFile": "src/public-api.ts"
     },
     "assets": ["src/assets"],
-    "allowedNonPeerDependencies": ["sweetalert2", "@angular/material"]
+    "allowedNonPeerDependencies": ["sweetalert2", "@angular/material", "@angular/cdk"]
 }

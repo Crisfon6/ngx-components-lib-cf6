@@ -9,7 +9,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 @Component({
   selector: 'lib-code-editor',
   standalone: true,
-  imports: [CommonModule,FormsModule,RoundedButtonComponent,ClipboardModule,BrowserAnimationsModule],
+  imports: [CommonModule,FormsModule,RoundedButtonComponent,ClipboardModule],
   templateUrl: './code-editor.component.html',
   styleUrl: './code-editor.component.scss'
 })

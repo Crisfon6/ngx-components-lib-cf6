@@ -1,5 +1,6 @@
 import { Component, Input } from '@angular/core';
 import {MatIconModule} from '@angular/material/icon';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 @Component({
   selector: 'lib-icon',
   standalone: true,

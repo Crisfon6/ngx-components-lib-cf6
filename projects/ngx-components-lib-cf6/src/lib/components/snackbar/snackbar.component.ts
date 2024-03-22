@@ -6,7 +6,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 @Component({
   selector: 'lib-snackbar',
   standalone: true,
-  imports: [MatButtonModule,BrowserAnimationsModule],
+  imports: [MatButtonModule],
   templateUrl: './snackbar.component.html',
   styleUrl: './snackbar.component.scss'
 })
