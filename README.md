@@ -26,3 +26,22 @@ For check the webpage for test the lib run :
 
 ```
 
+## How to publish the library
+1. Build library:
+```shell
+  cd projects/ngx-components-lib-cf6
+  ng build --configuration=production
+
+```
+2. Login in your npm account
+```shell
+  npm login
+```
+3. publish the library
+```shell
+cd ../../dist/ngx-components-lib-cf6
+npm publish
+```
+
+
+

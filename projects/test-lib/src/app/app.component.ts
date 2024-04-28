@@ -9,6 +9,8 @@ import {
 } from 'ngx-components-lib-cf6';
 import { SweetAlertOptions, SweetAlertResult } from 'sweetalert2';
 import { IconComponent } from '../../../ngx-components-lib-cf6/src/lib/components/icon/icon.component';
+import { Card } from '../../../ngx-components-lib-cf6/src/lib/interfaces/card.interface';
+import { CardComponent } from '../../../ngx-components-lib-cf6/src/lib/components/card/card.component';
 
 @Component({
   selector: 'app-root',
@@ -20,60 +22,18 @@ import { IconComponent } from '../../../ngx-components-lib-cf6/src/lib/component
     CodeEditorComponent,
     CodeRenderComponent,
     RouterLink,
-    IconComponent
+    IconComponent,
+    CardComponent
   ],
   providers: [AlertsService],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
 })
 export class AppComponent {
-  title = 'test-lib';
-  html = '';
-  css = '';
-  constructor(private alertService: AlertsService) {}
-  topicsMenu: any[] = [
-    {
-      route: 'html',
-      name: 'Html',
-    },
-    {
-      route: 'css',
-      name: 'Css',
-    },
-    {
-      route: 'Css-Grid',
-      name: 'Css Grid',
-    },
-    {
-      route: 'flex-box',
-      name: 'Flexbox',
-    },
-    {
-      route: 'sass',
-      name: 'sass',
-    },
-  ];
-  openAlert() {
-    const alertOptions: SweetAlertOptions = {
-      title: 'Do you want to save the changes?',
-      showDenyButton: true,
-      showCancelButton: true,
-      confirmButtonText: 'Save',
-      denyButtonText: `Don't save`,
-    };
-
-    this.alertService
-      .openAlert(alertOptions)
-      .then((result: SweetAlertResult) => {
-        console.log(result);
-      });
-  }
-  code(code: string, type: 'html' | 'css') {
-    console.log(code);
-    if (type === 'html') {
-      this.html = code;
-    } else {
-      this.css = `<style>${code}</style>`;
-    }
-  }
+  cardInfo: Card = {
+    title: 'What is CSS Grid?',
+    description:
+      'CSS Grid is a layout system in CSS (Cascading Style Sheets) that allows web developers to create complex grid-based layouts with ease. It provides a two-dimensional grid-based layout system, with rows and columns, making it easier to design web pages without having to rely on floats and positioning.',
+    color: '#3884ff',
+  };
 }
